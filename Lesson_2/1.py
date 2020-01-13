@@ -9,3 +9,27 @@
 Также сообщать пользователю о невозможности деления на ноль,
 если он ввел 0 в качестве делителя.
 """
+while 1 == 1:
+
+    A = int(input("Введите первое число "))
+    B = int(input("Введите второе число "))
+    USER_OPERATION = input("Введите знак операции '+', '-', '*', '/'. Для завершения программы введите '0' ")
+    if USER_OPERATION == "+" or USER_OPERATION == "-" or USER_OPERATION == "*" :
+        if USER_OPERATION == "+" :
+            C = str(A + B)
+            print("Результат" + C)
+        elif USER_OPERATION == "-" :
+            C = str(A - B)
+            print("Результат" + C)
+        elif USER_OPERATION == "*" :
+            C = str(A * B)
+            print("Результат" + C)
+    elif USER_OPERATION == "/" :
+        if B != 0:
+            C = str(A / B)
+            print("Результат деления: " + C)
+        else:
+            print("На ноль делить нельзя, введите другое число")
+    elif USER_OPERATION == "0":
+        break
+print("Спасибо, что были с нами")
