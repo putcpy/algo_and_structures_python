@@ -6,3 +6,19 @@
 то вывести загаданное число.
 """
 
+from random import random
+
+RAND_NUM = int(random() * 100)
+N = 10
+while N > 0:
+    USER_NUM = int(input("Введите число от 1 до 100 "))
+    if RAND_NUM > USER_NUM:
+        print ("нет, загаданное число больше. Попробуйте еще раз")
+    elif RAND_NUM < USER_NUM:
+        print ("нет, загаданное число меньше. Попробуйте еще раз")
+    else:
+        print("Верно!")
+        break
+    N -=1
+else:
+    print(f'Ваши попытки закончились, было загадано число {RAND_NUM}')
