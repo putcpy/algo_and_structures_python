@@ -2,10 +2,10 @@
 # над числами 5 и 6. Выполнить
 # над числом 5 побитовый сдвиг вправо и влево на два знака.
 
-A=5
-B=6
-AND_RESULT=A&B
-OR_RESULT=a|b
-XOR_RESULT=a^b
-LEFT_SHIFT_RESULT=5<<2
-RIGHT_SHIFT_RESULT=5>>2
+A = 5
+B = 6
+AND_RESULT = A & B
+OR_RESULT = A | B
+XOR_RESULT = A ^ B
+LEFT_SHIFT_RESULT = 5 << 2
+RIGHT_SHIFT_RESULT = 5 >> 2

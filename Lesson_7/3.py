@@ -6,3 +6,18 @@
 массива. Но если это слишком сложно, то используйте метод сортировки,
  который не рассматривался на уроках
 """
+
+from random import random
+
+QUANT = int(random() * 10) * 2 + 1
+A = [0]*QUANT
+
+for i in range(QUANT):
+    A[i] = int(random() * 100)
+print(f"Массив: {A}")
+
+A = sorted(A)
+MEDIAN_INDEX = int(QUANT/2)
+MEDIAN = A[MEDIAN_INDEX]
+
+print(f"Медиана: {MEDIAN}")
